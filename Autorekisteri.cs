@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace OmaOlioProjekti
+namespace Rekisteriprojekti
 {
 	class Autorekisteri
 	{
@@ -67,4 +67,3 @@ namespace OmaOlioProjekti
 		}
 	}
 }
-
