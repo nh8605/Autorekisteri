@@ -1,4 +1,4 @@
-﻿namespace OmaOlioProjekti
+namespace Rekisteriprojekti
 {
 	class Auto
 	{
@@ -19,3 +19,4 @@
 		}
 	}
 }
+
