@@ -1,22 +1,26 @@
+﻿
 namespace Rekisteriprojekti
 {
-	class Auto
+	class Auto : Ajoneuvo, ITallennettava
 	{
-		public string Rekisterinumero { get; }
-		public string Merkki { get; }
-		public string Malli { get; }
-
 		public Auto(string rekisterinumero, string merkki, string malli)
+			: base(rekisterinumero, merkki, malli)
 		{
-			Rekisterinumero = rekisterinumero;
-			Merkki = merkki;
-			Malli = malli;
+		}
+
+		public override void TulostaTiedot()
+		{
+			Console.WriteLine($"{Rekisterinumero} – {Merkki} {Malli}");
+		}
+
+		public string MuunnaTallennusmuotoon()
+		{
+			return $"{Rekisterinumero};{Merkki};{Malli}";
 		}
 
 		public override string ToString()
 		{
-			return $"{Rekisterinumero};{Merkki};{Malli}";
+			return $"{Merkki} {Malli} ({Rekisterinumero})";
 		}
 	}
 }
-
